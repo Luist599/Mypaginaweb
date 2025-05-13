@@ -1,16 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Web</title>
-    <link rel="icon" href="icons8-relámpago-64.png" type="image/x-icon">
-    <p>Hola Soy Luis Mario Tuarez Ramos</p>
-    <p>Estudiante de la Universidad Tecnica de Babahoyo</p>
-    <p> Carrera de Sistemas de Informacion</p>   
-    
+    <title>Formularios HTML</title>
 </head>
 <body>
-   
+    <header>
+        <h1>Manejo de Formularios en HTML 5.0</h1>
+        <hr/>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h2>Formulario Básico</h2>
+            </header>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Digite su Nombre...!">
+                <input type="submit" value="Enviar">
+                <button>Sumar + 5</button>
+                <input type="color" name="color" id="color">
+                <input type="date" name="fecha" id="fecha">
+                <br/>
+                <label for="">Contraseña:</label>
+                <input type="password" name="clave" id="clave">
+            </form>
+        </article>
+        <br/>
+        <article>
+            <header>
+                <h2>Formulario de Contacto</h2>
+            </header>
+            <h3>Ingresa tus Datos</h3>
+            <form>
+                <fieldset>
+                    <legend>Encuesta:</legend>
+                    <label for="txtNombre">Nombre y Apellido:</label>
+                    <input type="text" name="txtNombre" id="txtNombre"><br/>
+                    <label for="masculino">Género:</label><br/>
+                    <input type="radio" name="rdGenero" id="masculino">Masculino <br/>
+                    <input type="radio" name="rdGenero" id="femenino" checked>Femenino <br/>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" name="email" id="email"><br/><br/>
+                    <label for="fecha_n">Fecha de Nacimiento:</label>
+                    <input type="date" name="fecha_n" id="fecha_n"><br/><br/>
+                    <label for="color">Color Favorito:</label>
+                    <input type="color" name="color" id="color"><br/><br/>
+                    <label for="movil">Teléfono Móvil:</label>
+                    <input type="tel" name="movil" id="movil"><br/><br/>
+                    <label for="">Satisfacción con el Servicio:</label>
+                    1<input type="range" name="rngServicio" id="servicio" min="1" max="5" step="1">5 <br/><br/>
+                    <label for="lstRegion">Seleccione una Región para Viajar:</label>
+                    <select name="lstRegion" id="lstRegion">
+                        <option value="">Oriente</option>
+                        <option value="">Sierra</option>
+                        <option value="">Costa</option>
+                        <option value="">Región Insular</option>
+                    </select>
+                </fieldset>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reiniciar">
+            </form>
+        </article>
+        <br/>
+        <article>
+            <header>
+                <h2>Otro Ejemplo de Formulario Avanzado</h2>
+            </header>
+            <form>
+                <fieldset>
+                    <legend>Registro</legend>
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="18"><br>
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                    <option value="ec">Ecuador</option>
+                    <option value="co">Colombia</option>
+                    </select><br>
+                    <label>Género:</label>
+                    <input type="radio" name="genero" value="M"> Masculino
+                    <input type="radio" name="genero" value="F"> Femenino<br>
+                    <label>Aficiones:</label>
+                    <input type="checkbox" name="deporte"> Deporte
+                    <input type="checkbox" name="lectura"> Lectura<br>
+                    <textarea name="comentarios" rows="4" cols="30">Escribe aquí...
+                    </textarea><br>
+                    <input type="submit" value="Registrar">
+                </fieldset>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>&#169 2025: Desarrollo Basado en Plataformas</p>
+    </footer>
 </body>
 </html>
