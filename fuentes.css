@@ -37,7 +37,7 @@ nav ul {
     padding: 10px;
 }
 nav li a:hover{
- background-color:aliceblue;
+ background-color:rgb(235, 236, 236);
  cursor: pointer;
   
 }
